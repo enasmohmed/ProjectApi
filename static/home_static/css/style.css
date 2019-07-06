@@ -1,0 +1,33 @@
+.single_post{
+  width: 100%;
+}
+
+
+
+.banner{
+  width: 100%;
+}
+
+
+.blog_form{
+  width: 100%;
+}
+
+
+.massage_div{
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+
+}
+
+
+.massage{
+  background-color: #2e2e2e;
+    color: white;
+    list-style-type: none;
+}
+
+.massage li{
+padding: 15px;
+}

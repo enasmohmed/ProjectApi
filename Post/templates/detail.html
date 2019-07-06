@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load  static %}
+
+{% block body  %}
+<div class="jumbotron banner">
+  <a class="btn btn-primary btn-lg" href="{% url 'blog:edit_post' post.id %}" role="button">Edit This Post</a>
+  <a class="btn btn-primary btn-lg" href="{% url 'blog:delete_post' post.id %}" role="button">Delete Post</a>
+</div>
+<h2>{{ post.user.username }}</h2>
+          <div class="card single_post">
+          <img src="{{post.img.url}}" class="card-img-top" alt="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">{{post}}</h5>
+            <p class="card-text">{{post.content|safe}}</p>
+          </div>
+{% endblock body %}
